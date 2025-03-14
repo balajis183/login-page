@@ -1,138 +1,204 @@
 /* Login Page Styles */
 .login-container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    background: #f8f9fc;
-  }
-  
-  /* Left Side - Form */
-  .login-form {
-    flex: 1;
-    max-width: 400px;
-    background: #fff;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: auto;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2d7cf5;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    color: #666;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 14px;
-  }
-  
-  .btn-primary {
-    width: 100%;
-    padding: 12px;
-    background: #2d7cf5;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 15px;
-  }
-  
-  .social-login {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  
-  .google, .facebook {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    flex: 1;
-  }
-  
-  .google {
-    background: #db4437;
-    color: #fff;
-  }
-  
-  .facebook {
-    background: #3b5998;
-    color: #fff;
-  }
-  
-  .signup-text {
-    margin-top: 10px;
-  }
-  
-  /* Right Side - Stats */
-  .login-stats {
-    flex: 1.5;
-    background: #2d7cf5;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .login-stats h1 span {
-    font-weight: bold;
-  }
-  
-  .graph-container {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .graph {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #f8f9fc;
+}
+
+/* Left Side - Sign-in Form */
+.login-form {
+  flex: 1;
+  max-width: 50%;
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d7cf5;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #2d7cf5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.social-login {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.google, .facebook {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.google {
+  background: #db4437;
+  color: #fff;
+}
+
+.facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.signup-text {
+  margin-top: 10px;
+}
+
+/* Right Side - Stats */
+.login-stats {
+  flex: 1;
+  max-width: 50%;
+  background: #2d7cf5;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.login-stats h1 span {
+  font-weight: bold;
+}
+
+.graph-container {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.graph {
+  width: 300px;
+  height: 200px;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.stats-card {
+  background: #fff;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Three-dot pagination indicator */
+.scroll-indicator {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scroll-dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-dot.active {
+  background: white;
+  width: 12px;
+  height: 12px;
+}
+
+
+
+/* Graph Carousel */
+.graph-carousel {
     width: 300px;
     height: 200px;
-    background: #fff;
-    color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    font-weight: bold;
-  }
-  
-  .stats-card {
-    background: #fff;
+    background: white;
     color: #333;
-    padding: 15px;
     border-radius: 10px;
     font-weight: bold;
-  }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Pagination Dots */
+.graph-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.graph-pagination span {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.graph-pagination span.active {
+    width: 12px;
+    height: 12px;
+    background: white;
+}
