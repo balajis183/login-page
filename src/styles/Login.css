@@ -1,30 +1,51 @@
-/* Login Page Styles */
+/* 📌 Full Login Layout */
 .login-container {
   display: flex;
   height: 100vh;
   width: 100%;
-  background: #f8f9fc;
 }
 
-/* Left Side - Sign-in Form */
-.login-form {
+/* 📌 Left Side - Sign-in Section */
+.login-left {
   flex: 1;
-  max-width: 50%;
-  background: #fff;
-  padding: 40px;
+  max-width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  justify-content: center;
 }
 
-.logo {
+/* 🏆 Logo and Spiway Text */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.spiway-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.spiway-text {
   font-size: 24px;
   font-weight: bold;
   color: #2d7cf5;
-  margin-bottom: 20px;
+}
+
+/* 🎉 Sign-in Card */
+.login-card {
+  background: #fff;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
@@ -93,10 +114,10 @@ input {
   margin-top: 10px;
 }
 
-/* Right Side - Stats */
-.login-stats {
+/* 📌 Right Side (UNCHANGED - Blue Background) */
+.login-right {
   flex: 1;
-  max-width: 50%;
+  max-width: 60%;
   background: #2d7cf5;
   color: #fff;
   display: flex;
@@ -105,100 +126,46 @@ input {
   align-items: center;
   padding: 40px;
   text-align: center;
-  position: relative;
 }
 
-.login-stats h1 span {
+.login-right h1 span {
   font-weight: bold;
 }
 
-.graph-container {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
-}
-
-.graph {
+/* 📊 Graph Carousel */
+.graph-carousel {
   width: 300px;
   height: 200px;
-  background: #fff;
-  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.stats-card {
-  background: #fff;
+  background: white;
   color: #333;
-  padding: 15px;
   border-radius: 10px;
   font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out;
 }
 
-/* Three-dot pagination indicator */
-.scroll-indicator {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+/* 🔵 Pagination Dots */
+.graph-pagination {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
-.scroll-dot {
+.graph-pagination span {
   width: 10px;
   height: 10px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
-  cursor: pointer;
-}
-
-.scroll-dot.active {
-  background: white;
-  width: 12px;
-  height: 12px;
-}
-
-
-
-/* Graph Carousel */
-.graph-carousel {
-    width: 300px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    color: #333;
-    border-radius: 10px;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Pagination Dots */
-.graph-pagination {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-.graph-pagination span {
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .graph-pagination span.active {
-    width: 12px;
-    height: 12px;
-    background: white;
+  width: 12px;
+  height: 12px;
+  background: white;
 }
