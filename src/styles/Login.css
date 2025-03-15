@@ -38,6 +38,10 @@ p {
   margin-bottom: 20px;
 }
 
+.login-stats p{
+  color:whitesmoke;
+}
+
 input {
   width: 100%;
   padding: 12px;

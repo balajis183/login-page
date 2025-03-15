@@ -43,8 +43,8 @@ const Login = () => {
 
       {/* Right Side - Scrollable Graphs */}
       <div className="login-stats">
-        <h1>Welcome back! Please sign in to your <span>Spiway</span> account</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h1>Welcome back! <br /> Please sign in to your <span>Spiway</span> account</h1>
+        <p>Sign in to access Spiway application's Dashboard Statistics along with graphical representation of terms</p>
 
         {/* Scrollable Graphs Container */}
         <div className="graph-carousel">
