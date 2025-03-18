@@ -22,7 +22,7 @@ const Login = () => {
         <h2>Sign In</h2>
         <p>Welcome back! Please enter your details</p>
         <form>
-          <input type="email" placeholder="Enter your email" required />
+          <input type="email" placeholder="Enter your email address" required />
           <input type="password" placeholder="Enter your password" required />
           <div className="options">
             <label>
