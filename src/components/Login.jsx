@@ -1,69 +1,57 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Login.css";
 
-const Login = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const graphs = [
-    <div className="graph">📊 Graph 1</div>,
-    <div className="graph">📈 Graph 2</div>,
-    <div className="graph">📉 Graph 3</div>,
-  ];
-
-  const handleDotClick = (index) => {
-    setCurrentSlide(index);
-  };
-
+const LoginPage = () => {
   return (
-    <div className="login-container">
-      {/* Left Side - Sign-in Form */}
-      <div className="login-form">
-        <div className="logo">Spiway</div>
-        <h2>Sign In</h2>
-        <p>Welcome back! Please enter your details</p>
-        <form>
-          <input type="email" placeholder="Enter your email address" required />
-          <input type="password" placeholder="Enter your password" required />
-          <div className="options">
-            <label>
-              <input type="checkbox" /> Remember for 30 Days
-            </label>
-            <a href="/forgot-password">Forgot password?</a>
+    <div className="container">
+      {/* Left Section - Login Form */}
+      <div className="left-section">
+        <div className="card">
+          <h2 className="text-center">Sign In</h2>
+          <p className="text-gray-500 text-sm text-center">Welcome back! Please enter your details</p>
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" className="input-field" />
+
+          <label>Password</label>
+          <input type="password" placeholder="••••••••" className="input-field" />
+
+          <div className="flex justify-between items-center">
+            <div>
+              <input type="checkbox" id="remember" /> <label htmlFor="remember">Remember for 30 Days</label>
+            </div>
+            <a href="#" className="text-blue-600 text-sm">Forgot password?</a>
           </div>
-          <button type="submit" className="btn-primary">Sign In</button>
-        </form>
-        <div className="social-login">
-          <button className="google">Sign up with Google</button>
-          <button className="facebook">Sign up with Facebook</button>
+
+          <button>Sign In</button>
+
+          <div className="text-center my-4">OR</div>
+
+          <div className="social-buttons">
+            <div className="social-button">
+              <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" />
+              Sign in with Google
+            </div>
+            <div className="social-button">
+              <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" />
+              Sign in with Facebook
+            </div>
+          </div>
+
+          <p className="text-center text-sm mt-4">
+            Don’t have an account? <a href="#" className="text-blue-600 font-medium">Sign up</a>
+          </p>
         </div>
-        <p className="signup-text">
-          Don't have an account? <a href="/signup">Sign up</a>
-        </p>
       </div>
 
-      {/* Right Side - Scrollable Graphs */}
-      <div className="login-stats">
-        <h1>Welcome back! <br /> Please sign in to your <span>Spiway</span> account</h1>
-        <p>Sign in to access Spiway application's Dashboard Statistics along with graphical representation of terms</p>
-
-        {/* Scrollable Graphs Container */}
-        <div className="graph-carousel">
-          {graphs[currentSlide]}
-        </div>
-
-        {/* Pagination Dots */}
-        <div className="graph-pagination">
-          {graphs.map((_, index) => (
-            <span
-              key={index}
-              className={index === currentSlide ? "active" : ""}
-              onClick={() => handleDotClick(index)}
-            ></span>
-          ))}
-        </div>
+      {/* Right Section - Info */}
+      <div className="right-section">
+        <h1>Welcome back!</h1>
+        <h2>Please sign in to your <span className="underline">Filuick Pay</span> account</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Facilisi neque lectus turpis id tincidunt eget.</p>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default LoginPage;
