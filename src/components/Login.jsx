@@ -1,54 +1,67 @@
 import React from "react";
 import "../styles/Login.css";
+import googleLogo from "../assets/google.png";
+import facebookLogo from "../assets/apple.png";
+import graphImage from "../assets/graph2.png";
+import circlegraph from "../assets/circle1.png";
+import logo from "../assets/logo.png";
 
 const LoginPage = () => {
   return (
-    <div className="container">
-      {/* Left Section - Login Form */}
-      <div className="left-section">
-        <div className="card">
-          <h2 className="text-center">Sign In</h2>
-          <p className="text-gray-500 text-sm text-center">Welcome back! Please enter your details</p>
+    <div className="auth-container">
+      <div className="logo-container">
+        <img src={logo} alt="Logo" />
+        <h2 className="brand-name">Filuick Pay</h2>
+      </div>
+      <div className="auth-form">
+        <h2>Sign In</h2>
 
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email" className="input-field" />
+        <p className="header-text">Welcome Back! Please enter your details</p>
 
-          <label>Password</label>
-          <input type="password" placeholder="••••••••" className="input-field" />
+        <label htmlFor="email" className="label-email">Email</label>
+        <input id="email" type="email" className="input-field" placeholder="Enter your email" />
 
-          <div className="flex justify-between items-center">
-            <div>
-              <input type="checkbox" id="remember" /> <label htmlFor="remember">Remember for 30 Days</label>
-            </div>
-            <a href="#" className="text-blue-600 text-sm">Forgot password?</a>
-          </div>
+        <label htmlFor="password" className="label-password">Password</label>
+        <input id="password" type="password" className="input-field" placeholder="........." />
 
-          <button>Sign In</button>
+        <div className="form-options">
+          <label>
+            <input type="checkbox" /> Remember me for 30 days
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
 
-          <div className="text-center my-4">OR</div>
+        <button className="primary-btn">Login</button>
 
-          <div className="social-buttons">
-            <div className="social-button">
-              <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" />
-              Sign in with Google
-            </div>
-            <div className="social-button">
-              <img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook" />
-              Sign in with Facebook
-            </div>
-          </div>
+        <div className="separator">OR</div>
 
-          <p className="text-center text-sm mt-4">
-            Don’t have an account? <a href="#" className="text-blue-600 font-medium">Sign up</a>
-          </p>
+        <div className="social-auth">
+          <button className="social-btn google-btn">
+            <img src={googleLogo} alt="Google" className="social-logo" /> Sign in with Google
+          </button>
+          <button className="social-btn facebook-btn">
+            <img src={facebookLogo} alt="Facebook" className="social-logo" /> Sign in with Facebook
+          </button>
+        </div>
+
+        <div className="signup-text">
+          Don't have an account? <a href="#">Sign up</a>
         </div>
       </div>
 
-      {/* Right Section - Info */}
-      <div className="right-section">
-        <h1>Welcome back!</h1>
-        <h2>Please sign in to your <span className="underline">Filuick Pay</span> account</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Facilisi neque lectus turpis id tincidunt eget.</p>
+      <div className="blue-box">
+        <h1>
+          Welcome back! <br /> Please sign in to your <br /> Filuick Pay account
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure <br />veniam perspiciatis sapiente
+          similique officia obcaecati vero eius a!
+        </p>
+
+        <div className="graph-container">
+          <img src={graphImage} alt="Graph" className="graph-image" />
+          <img src={circlegraph} alt="Circle Graph" className="circle-graph" />
+        </div>
       </div>
     </div>
   );
