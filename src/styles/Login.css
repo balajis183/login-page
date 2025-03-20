@@ -228,18 +228,18 @@ body {
 .blue-box h1 {
   color: white;
   font-family: 'Poppins', sans-serif;
-  /* font-size: 38px; */
-  font-weight: 600; /* SemiBold */
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: -30px;
+  margin-bottom: 5px;
 }
 
 .blue-box p {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  color: rgb(226, 217, 217);
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 18px; */
+  font-weight: 300;
   text-align: center;
-  font-weight: 100;
 }
 
 /* Graph Container */
@@ -270,31 +270,31 @@ body {
 /* Specific Styles for Graphs */
 .graph-1 {
   width: 400px;
-  margin-top: 170px;
+  margin-top: 100px;
   margin-right: 200px;
 }
 
 .graph-2 {
-  width: 380px;
-  margin-top: 130px;
+  width: 350px;
+  margin-top: 100px;
   margin-right: 180px;
 }
 
 .graph-3 {
   width: 400px;
-  margin-top: 160px;
+  margin-top: 100px;
   margin-right: 220px;
 }
 
 /* Specific Styles for Circles */
 .circle-1 {
-  width: 350px;
-  top: 90px;
-  right: -100px;
+  width: 300px;
+  top: 50px;
+  right: -70px;
 }
 
 .circle-2 {
-  width: 220px;
+  width: 200px;
   top: 80px;
   right: -50px;
 }
