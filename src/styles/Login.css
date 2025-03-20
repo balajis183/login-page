@@ -327,7 +327,7 @@ body {
 
 .dash.active {
   background-color: blue;
-  width: 35px; /* Slightly longer when active */
+  width: 35px;
 }
 
 
