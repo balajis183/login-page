@@ -5,20 +5,16 @@ body {
   background-color: rgba(255, 255, 255, 0.812);
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-}
-.auth-container {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 90px;
 }
 
+/* /* Logo  */
 .logo-container {
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .logo-container img {
@@ -26,19 +22,28 @@ body {
   height: auto;
   object-fit: contain;
   background-color: white;
-  margin-top: -550px;
 }
 
 .brand-name {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
-  margin-top: 200px;
+  margin-left: 20px;
+}
+
+/* Authentication container */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 20px; 
 }
 
 /* Form */
 .auth-form {
   width: 320px;
-  padding: 45px;
+  height: 370px;
+  padding: 55px;
   text-align: center;
   background: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -47,9 +52,15 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  margin-left: -250px;
-  margin-top: 100px;
+  margin-top: -10px;
+  margin-left: -900px;
 }
+.auth-form h2 {
+  font-size: 24px;
+  color: black;
+  margin-top: 10px;
+}
+
 /* Heading */
 .header-text {
   white-space: nowrap;
@@ -58,13 +69,6 @@ body {
   color: rgb(134, 127, 127);
   margin-bottom: 1px;
   margin-top: -20px;
-}
-
-/* Subheading */
-.sub-header-text {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 10px;
 }
 
 /* Input Fields */
@@ -89,11 +93,12 @@ body {
 .label-password {
   display: block;
   text-align: left;
-  margin: 6px 0 2px; /* Reduce space */
+  margin: 6px 0 2px;
   font-size: 14px;
   font-weight: bold;
   color: #333;
 }
+
 
 /* Options (Remember Me & Forgot Password) */
 .form-options {
@@ -101,11 +106,6 @@ body {
   justify-content: space-between;
   font-size: 12px;
   margin: 10px 0;
-}
-
-.form-options label {
-  display: flex;
-  align-items: center;
 }
 
 .form-options a {
@@ -180,7 +180,6 @@ body {
   color: black;
 }
 
-/* Ensure Logo and Text Stay in One Line */
 .social-btn img {
   width: 14px;
   height: 14px;
@@ -189,7 +188,6 @@ body {
   display: inline-block;
 }
 
-/* Social Button Hover Effects */
 .social-btn:hover {
   transform: scale(1.05);
 }
@@ -207,34 +205,44 @@ body {
   font-weight: bold;
 }
 
+/* Blue Box */
+.blue-box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -670px;
+  margin-left: 500px;
+}
 .blue-box {
-  width: 800px;
-  height: 720px;
-  background-color: rgba(4, 4, 255, 0.632);
-  border-radius: 10px;
-  margin-right: -150px;
+  width: 640px;
+  height: 650px;
+  background-color: rgba(28, 28, 183, 0.799);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
 .blue-box h1 {
   color: white;
-  font-family: sans-serif;
-  margin-top: 45px;
-  font-size: 40px;
-  display: flex;
-  justify-content: centerSS;
-  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 38px; */
+  font-weight: 600; /* SemiBold */
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .blue-box p {
   color: white;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  justify-content: center;
+  text-align: center;
+  font-weight: 100;
 }
-/* Container for the graph image */
+
+/* Graph Container */
 .graph-container {
   position: relative;
   display: flex;
@@ -243,10 +251,11 @@ body {
   margin-top: -45px;
 }
 
+/* Default Graph Styling */
 .graph-image {
   width: 400px;
   height: auto;
-  margin-top: 150px;
+  margin-top: 170px;
   margin-right: 200px;
 }
 
@@ -255,5 +264,70 @@ body {
   width: 350px;
   height: auto;
   top: 90px;
-  right: 10px;
+  right: -100px;
 }
+
+/* Specific Styles for Graphs */
+.graph-1 {
+  width: 400px;
+  margin-top: 170px;
+  margin-right: 200px;
+}
+
+.graph-2 {
+  width: 380px;
+  margin-top: 130px;
+  margin-right: 180px;
+}
+
+.graph-3 {
+  width: 400px;
+  margin-top: 160px;
+  margin-right: 220px;
+}
+
+/* Specific Styles for Circles */
+.circle-1 {
+  width: 350px;
+  top: 90px;
+  right: -100px;
+}
+
+.circle-2 {
+  width: 220px;
+  top: 80px;
+  right: -50px;
+}
+
+.circle-3 {
+  width: 150px;
+  top: 100px;
+  right: 20px;
+}
+
+.dots-container {
+  position: absolute;
+  top: 690px; /* Moves it to the middle of the blue box */
+  left: 1010px;
+  transform: translate(-50%, -50%); /* Centers it properly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Space between dashes */
+}
+
+.dash {
+  width: 25px; /* Dash width */
+  height: 4px; /* Dash thickness */
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, width 0.3s;
+}
+
+.dash.active {
+  background-color: blue;
+  width: 35px; /* Slightly longer when active */
+}
+
+
