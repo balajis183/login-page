@@ -307,18 +307,18 @@ body {
 
 .dots-container {
   position: absolute;
-  top: 690px; /* Moves it to the middle of the blue box */
+  top: 690px; 
   left: 1010px;
-  transform: translate(-50%, -50%); /* Centers it properly */
+  transform: translate(-50%, -50%); 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px; /* Space between dashes */
+  gap: 12px; 
 }
 
 .dash {
-  width: 25px; /* Dash width */
-  height: 4px; /* Dash thickness */
+  width: 15px; /* Dash width */
+  height: 3px; /* Dash thickness */
   background-color: lightgray;
   border-radius: 5px;
   cursor: pointer;
