@@ -1,208 +1,333 @@
-/* Login Page Styles */
-.login-container {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.812);
+  overflow: hidden;
   display: flex;
   height: 100vh;
-  width: 100%;
-  background: #f8f9fc;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Left Side - Sign-in Form */
-.login-form {
-  flex: 1;
-  max-width: 50%;
-  background: #fff;
-  padding: 40px;
+/* /* Logo  */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo-container img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  background-color: white;
+}
+
+.brand-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Authentication container */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  margin-top: 20px; 
+}
+
+/* Form */
+.auth-form {
+  width: 320px;
+  height: 370px;
+  padding: 55px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  position: relative;
+  margin-top: -10px;
+  margin-left: -900px;
 }
-
-.logo {
+.auth-form h2 {
   font-size: 24px;
-  font-weight: bold;
-  color: #2d7cf5;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-p {
-  color: #666;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.login-stats p{
-  color:whitesmoke;
-}
-
-input {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.options {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 14px;
-}
-
-.btn-primary {
-  width: 100%;
-  padding: 12px;
-  background: #2d7cf5;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.social-login {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.google, .facebook {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  flex: 1;
-}
-
-.google {
-  background: #db4437;
-  color: #fff;
-}
-
-.facebook {
-  background: #3b5998;
-  color: #fff;
-}
-
-.signup-text {
+  color: black;
   margin-top: 10px;
 }
 
-/* Right Side - Stats */
-.login-stats {
-  flex: 1;
-  max-width: 50%;
-  background: #2d7cf5;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  text-align: center;
-  position: relative;
+/* Heading */
+.header-text {
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 15px;
+  color: rgb(134, 127, 127);
+  margin-bottom: 1px;
+  margin-top: -20px;
 }
 
-.login-stats h1 span {
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Labels */
+.label-email,
+.label-password {
+  display: block;
+  text-align: left;
+  margin: 6px 0 2px;
+  font-size: 14px;
   font-weight: bold;
-}
-
-.graph-container {
-  margin-top: 30px;
-  display: flex;
-  gap: 20px;
-}
-
-.graph {
-  width: 300px;
-  height: 200px;
-  background: #fff;
   color: #333;
+}
+
+
+/* Options (Remember Me & Forgot Password) */
+.form-options {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-weight: bold;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 10px 0;
 }
 
-.stats-card {
-  background: #fff;
-  color: #333;
-  padding: 15px;
-  border-radius: 10px;
-  font-weight: bold;
+.form-options a {
+  text-decoration: none;
+  color: #007bff;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
-/* Three-dot pagination indicator */
-.scroll-indicator {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.scroll-dot {
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
+/* Primary Button */
+.primary-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
-.scroll-dot.active {
+.primary-btn:hover {
+  background: #0056b3;
+}
+
+/* Separator */
+.separator {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: black;
+}
+
+/* Social Buttons */
+.social-auth {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Google & Facebook Styles */
+.google-btn {
   background: white;
-  width: 12px;
-  height: 12px;
+  border: 1px solid #333;
+  color: black;
+}
+
+.facebook-btn {
+  background: white;
+  border: 1px solid #333;
+  color: black;
+}
+
+.social-btn img {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.social-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Sign-up Text */
+.signup-text {
+  margin-top: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.signup-text a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Blue Box */
+.blue-box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -670px;
+  margin-left: 500px;
+}
+.blue-box {
+  width: 640px;
+  height: 650px;
+  background-color: rgba(28, 28, 183, 0.799);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.blue-box h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 38px; */
+  font-weight: 600; /* SemiBold */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.blue-box p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 100;
+}
+
+/* Graph Container */
+.graph-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -45px;
+}
+
+/* Default Graph Styling */
+.graph-image {
+  width: 400px;
+  height: auto;
+  margin-top: 170px;
+  margin-right: 200px;
+}
+
+.circle-graph {
+  position: absolute;
+  width: 350px;
+  height: auto;
+  top: 90px;
+  right: -100px;
+}
+
+/* Specific Styles for Graphs */
+.graph-1 {
+  width: 400px;
+  margin-top: 170px;
+  margin-right: 200px;
+}
+
+.graph-2 {
+  width: 380px;
+  margin-top: 130px;
+  margin-right: 180px;
+}
+
+.graph-3 {
+  width: 400px;
+  margin-top: 160px;
+  margin-right: 220px;
+}
+
+/* Specific Styles for Circles */
+.circle-1 {
+  width: 350px;
+  top: 90px;
+  right: -100px;
+}
+
+.circle-2 {
+  width: 220px;
+  top: 80px;
+  right: -50px;
+}
+
+.circle-3 {
+  width: 150px;
+  top: 100px;
+  right: 20px;
+}
+
+.dots-container {
+  position: absolute;
+  top: 690px; /* Moves it to the middle of the blue box */
+  left: 1010px;
+  transform: translate(-50%, -50%); /* Centers it properly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* Space between dashes */
+}
+
+.dash {
+  width: 25px; /* Dash width */
+  height: 4px; /* Dash thickness */
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, width 0.3s;
+}
+
+.dash.active {
+  background-color: blue;
+  width: 35px; /* Slightly longer when active */
 }
 
 
-
-/* Graph Carousel */
-.graph-carousel {
-    width: 300px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    color: #333;
-    border-radius: 10px;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Pagination Dots */
-.graph-pagination {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-.graph-pagination span {
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.graph-pagination span.active {
-    width: 12px;
-    height: 12px;
-    background: white;
-}
