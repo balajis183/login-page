@@ -9,7 +9,6 @@ import circle1 from "../assets/circle1.png";
 import circle2 from "../assets/circle2.png";
 import circle3 from "../assets/circle3.png";
 import logo from "../assets/logo.png";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 const slides = [
   {
@@ -28,9 +27,9 @@ const slides = [
   {
     heading: (
       <>
-        Manage your finances <br />
-        easily with <br />
-        Filuick Pay
+        Manage your <br />
+        finances easily <br />
+        with Filuick pay
       </>
     ),
     description:
@@ -62,7 +61,10 @@ const LoginPage = () => {
       <div className="header-container">
         <div className="logo-container">
           <img src={logo} alt="Logo" />
-          <h2 className="brand-name">Filuick Pay</h2>
+          <h2 className="brand-name">
+            <span className="blue-text">Filu</span>ick{" "}
+            <span className="blue-text">Pay</span>
+          </h2>
         </div>
       </div>
 
@@ -100,7 +102,7 @@ const LoginPage = () => {
               <label>
                 <input type="checkbox" /> Remember me for 30 days
               </label>
-              <a href="#">Forgot password?</a>
+              <a href="#">Forgot password</a>
             </div>
 
             <button className="primary-btn">Login</button>
@@ -146,15 +148,14 @@ const LoginPage = () => {
             </div>
 
             <div className="dots-container">
-  {slides.map((_, index) => (
-    <div
-      key={index}
-      className={`dash ${index === currentSlide ? "active" : ""}`}
-      onClick={() => setCurrentSlide(index)}
-    ></div>
-  ))}
-</div>
-
+              {slides.map((_, index) => (
+                <div
+                  key={index}
+                  className={`dash ${index === currentSlide ? "active" : ""}`}
+                  onClick={() => setCurrentSlide(index)}
+                ></div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

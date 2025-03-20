@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.812);
+  background-color: rgba(255, 255, 255, 0.993);
   overflow: hidden;
   display: flex;
   height: 100vh;
@@ -28,7 +28,12 @@ body {
   font-size: 40px;
   font-weight: bold;
   margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
 }
+.blue-text {
+  color:  rgba(28, 28, 183, 0.799);
+}
+
 
 /* Authentication container */
 .auth-container {
@@ -106,6 +111,7 @@ body {
   justify-content: space-between;
   font-size: 12px;
   margin: 10px 0;
+  color: black;
 }
 
 .form-options a {
