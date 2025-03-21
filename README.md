@@ -71,4 +71,20 @@ The app will be available at:
 
 ## Screenshots
 
+![image-1](https://github.com/user-attachments/assets/aa377340-0cec-43cf-8689-c15089c1e39d)
+![image](https://github.com/user-attachments/assets/64e395bd-a5dd-4614-b5c0-43bbdd1b6c75)
+![image](https://github.com/user-attachments/assets/a25c6f8d-9dbe-4193-bc0a-262ae32d9bf2)
+
+## 🚀 Major Contribution  
+
+This project was **majorly developed by [Manikanta (Mani)](https://github.com/Manikanta-81)**, who played a crucial role in building the UI and implementing the core functionality.  
+
+- **GitHub**: [Manikanta-81](https://github.com/Manikanta-81)  
+- **Email**: vaddimanikanta2002@gmail.com  
+
+A huge shoutout to **Mani** for his dedication and effort in making this project a reality! 🎉  
+
+---
+
+
 
