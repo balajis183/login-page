@@ -73,7 +73,7 @@ const LoginPage = () => {
           <div className="auth-form">
             <h2>Sign In</h2>
             <p className="header-text">
-              Welcome Back! Please enter your details
+              Welcome back! Please enter your details
             </p>
 
             <label htmlFor="email" className="label-email">
@@ -100,18 +100,18 @@ const LoginPage = () => {
 
             <div className="form-options">
               <label>
-                <input type="checkbox" /> Remember me for 30 days
+                <input type="checkbox" /> Remember me for 30 Days
               </label>
               <a href="#">Forgot password</a>
             </div>
 
-            <button className="primary-btn">Login</button>
+            <button className="primary-btn">Sign in</button>
             <div className="separator">OR</div>
 
             <div className="social-auth">
               <button className="social-btn google-btn">
                 <img src={googleLogo} alt="Google" className="social-logo" />{" "}
-                Sign in with Google
+                Sign up with Google
               </button>
               <button className="social-btn facebook-btn">
                 <img
@@ -119,7 +119,7 @@ const LoginPage = () => {
                   alt="Facebook"
                   className="social-logo"
                 />{" "}
-                Sign in with Facebook
+                Sign up with Facebook
               </button>
             </div>
 
